@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-
 const faqs = [
   {
     question: "Is watermark removal free?",
@@ -18,7 +17,6 @@ const faqs = [
 
 export default function FAQ() {
   const [open, setOpen] = useState(null);
-
   return (
     <section id="faq" className="py-24 bg-white">
       <div className="max-w-4xl mx-auto px-6">
@@ -44,8 +42,8 @@ export default function FAQ() {
             )}
           </div>
         ))}
-
       </div>
     </section>
   );
 }
+
