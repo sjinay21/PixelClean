@@ -1,5 +1,4 @@
 const cloudinary = require("../config/cloudinary");
-
 const uploadFile = async (fileBuffer) => {
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
@@ -9,11 +8,8 @@ const uploadFile = async (fileBuffer) => {
         resolve(result.secure_url);
       }
     );
-
     stream.end(fileBuffer);
   });
 };
+module.exports = { uploadFile};
 
-module.exports = {
-  uploadFile,
-};
