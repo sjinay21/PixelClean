@@ -1,3 +1,5 @@
+const express = require("express");
+const cors = require("cors");
 const path = require("path");
 const authRoutes = require("./core/auth/auth.routes");
 const authMiddleware = require("./middleware/auth.middleware");
