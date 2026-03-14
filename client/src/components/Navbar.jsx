@@ -7,7 +7,7 @@ export default function Navbar() {
         <Link href="/pricing">Pricing</Link>
         <Link href="/api">API</Link>
         <Link href="/blog">Blog</Link>
-        <Link href="/tools">Watermark Remover</Link>
+        <Link href="/tools">Tools</Link>
         <Link href="/dashboard">Dashboard</Link>
         <Link href="/login" className="bg-orange-500 text-white px-4 py-2 rounded-lg">
           Login
