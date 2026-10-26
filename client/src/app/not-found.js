@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ROUTES } from "@/hooks/useNavigation";
 import Navbar from "@/components/layout/Navbar";
@@ -5,6 +7,8 @@ import Footer from "@/components/layout/Footer";
 import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
 
 export default function NotFound() {
+
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-yellow-100 via-pink-100 to-purple-200">
       <Navbar />
@@ -31,7 +35,7 @@ export default function NotFound() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-8">
-            <Link
+             <Link
               href={ROUTES.HOME}
               className="w-full sm:w-auto px-6 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-medium text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer text-center"
             >
